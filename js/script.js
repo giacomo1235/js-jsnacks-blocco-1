@@ -48,7 +48,7 @@ document.getElementById('maggiore').innerHTML = somma;
 /* / snack 3 */
 
 /* snack 4 */
-
+/* 
 const invitati = [
     'Pietro Pacciani',
     'Annamaria Franzoni',
@@ -71,5 +71,7 @@ if (permessoAccordato) {
     document.getElementById('maggiore').innerHTML = 'permesso accordato!'
 } else {
     document.getElementById('maggiore').innerHTML = "tu non puoi passare!"
-}
+};
+ */
+/* / snack 4 */
 

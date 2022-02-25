@@ -46,3 +46,30 @@ for (let i=0; i < arrNum.length; i++) {
 document.getElementById('maggiore').innerHTML = somma;
 */
 /* / snack 3 */
+
+/* snack 4 */
+
+const invitati = [
+    'Pietro Pacciani',
+    'Annamaria Franzoni',
+    'Amanda Knox',
+    'Leonarda Cianciulli',
+    'Andrea DiPrè'
+];
+ 
+let permessoAccordato = false;
+
+let nomeInvitato = prompt('il tuo nome');
+
+for (let i = 0; i < invitati.length; i++) {
+    if (invitati[i] == nomeInvitato) {
+        permessoAccordato = true;
+    }
+};
+
+if (permessoAccordato) {
+    document.getElementById('maggiore').innerHTML = 'permesso accordato!'
+} else {
+    document.getElementById('maggiore').innerHTML = "tu non puoi passare!"
+}
+

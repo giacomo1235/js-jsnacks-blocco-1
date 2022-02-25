@@ -36,7 +36,7 @@ let somma = 0;
 for (let i = 0; i < 10; i++) {
     let userNum = parseInt(prompt('numero'));
     arrNum.push(userNum);
-}
+};
 
 for (let i=0; i < arrNum.length; i++) {
     somma += arrNum[i];
@@ -74,4 +74,21 @@ if (permessoAccordato) {
 };
  */
 /* / snack 4 */
+
+/* snack 5 */
+
+let arrNum = [];
+
+
+for (let i = 0; i < 6; i++) {
+    let userNum = parseInt(prompt('numero'));
+}
+
+for (let i=0; i < arrNum.length; i++) {
+    if (userNum % 2 == 1) {
+        arrNum.push(userNum)
+    } 
+};
+document.getElementById('maggiore').innerHTML = arrNum;
+
 

@@ -1,5 +1,5 @@
 /* snack 1 */
-/* 
+
 const num1 = parseInt(prompt('primo numero'));
 const num2 = parseInt(prompt('secondo numero'));
 
@@ -10,11 +10,11 @@ if (num1 > num2) {
 } else {
     document.getElementById('maggiore').innerHTML = `sono uguali`
 };
- */
+ 
 /* / snack 1 */
 
 /* snack 2 */
-/*
+
 let string1 = prompt('prima parola');
 let string2 = prompt('seconda parola');
 
@@ -25,11 +25,11 @@ if (string1.length > string2.length) {
 } else {
     document.getElementById('maggiore').innerHTML = `sono lunghe uguali`
 };
-*/
+
 /* / snack2 */
 
 /* snack 3  */
-/* 
+
 let arrNum = [];
 let somma = 0;
 
@@ -44,11 +44,11 @@ for (let i=0; i < arrNum.length; i++) {
 };
 
 document.getElementById('maggiore').innerHTML = somma;
-*/
+
 /* / snack 3 */
 
 /* snack 4 */
-/* 
+
 const invitati = [
     'Pietro Pacciani',
     'Annamaria Franzoni',
@@ -72,23 +72,45 @@ if (permessoAccordato) {
 } else {
     document.getElementById('maggiore').innerHTML = "tu non puoi passare!"
 };
- */
+ 
 /* / snack 4 */
 
 /* snack 5 */
 
 let arrNum = [];
 
-
 for (let i = 0; i < 6; i++) {
     let userNum = parseInt(prompt('numero'));
-}
-
-for (let i=0; i < arrNum.length; i++) {
+    
     if (userNum % 2 == 1) {
         arrNum.push(userNum)
     } 
+    document.getElementById('maggiore').innerHTML = arrNum;
 };
-document.getElementById('maggiore').innerHTML = arrNum;
+
+/* / snack 5 */
+
+/* snack 6 */
+
+const arrNum = [];
+
+for (let i = 0; i < 4; i++) {
+    let userNum = parseInt(prompt('numero'));
+    arrNum.push(userNum);
+};
+
+
+const initialValue = 0;
+const sumWithInitial = arrNum.reduce(
+  (previousValue, currentValue) => previousValue + currentValue,
+  initialValue
+);
+
+document.getElementById('maggiore').innerHTML = sumWithInitial;
+
+/* / snack 6 */
+
+
+
 
 

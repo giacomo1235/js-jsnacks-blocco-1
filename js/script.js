@@ -111,15 +111,8 @@ document.getElementById('maggiore').innerHTML = sumWithInitial;
 /* / snack 6 */
 
 /* snack 9 */
+
 /* 
-let arrNum = [];
-
-while (arrNum.length < 10) {
-    let userNum = parseInt(prompt('numero'));
-    arrNum.push(userNum)
-};
-console.log(arrNum); */
-
 let arrNum = [];
 let sum = 0;
 
@@ -129,9 +122,42 @@ for ( let i = 1; i <= 10; i++) {
 
 let average = sum / 10 ;
 
-console.log (sum, average)
+document.getElementById('maggiore').innerHTML = sum, average;
 
 
+ */
 
 
+/* snack 2.1 ciclo for */
 
+let arrNum = [];
+let somma = 0;
+
+for (let i = 0; i < 5; i++) {
+    let userNum = parseInt(prompt('numero'));
+    arrNum.push(userNum);
+};
+
+for (let i=0; i < arrNum.length; i++) {
+    somma += arrNum[i];
+     
+};
+
+document.getElementById('maggiore').innerHTML = somma; 
+
+/* / snack 2.1 ciclo for */
+
+/* snack 2.1 ciclo while1 */
+
+let arrNum = [];
+let somma = 0;
+let i=0;
+while (arrNum.length < 5) {
+    let userNum = parseInt(prompt('numero'));
+    arrNum.push(userNum);
+    somma += arrNum[i];
+};
+
+document.getElementById('maggiore').innerHTML = somma;
+
+/* / snack 2.1 ciclo while */

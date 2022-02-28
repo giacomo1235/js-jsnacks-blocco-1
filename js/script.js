@@ -1,6 +1,6 @@
 /* snack 1 */
 
-const num1 = parseInt(prompt('primo numero'));
+/* const num1 = parseInt(prompt('primo numero'));
 const num2 = parseInt(prompt('secondo numero'));
 
 if (num1 > num2) {
@@ -9,13 +9,13 @@ if (num1 > num2) {
     document.getElementById('maggiore').innerHTML = `il secondo numero è più grande`
 } else {
     document.getElementById('maggiore').innerHTML = `sono uguali`
-};
+}; */
  
 /* / snack 1 */
 
 /* snack 2 */
 
-let string1 = prompt('prima parola');
+/* let string1 = prompt('prima parola');
 let string2 = prompt('seconda parola');
 
 if (string1.length > string2.length) {
@@ -24,13 +24,13 @@ if (string1.length > string2.length) {
     document.getElementById('maggiore').innerHTML = `la seconda parola è più lunga`
 } else {
     document.getElementById('maggiore').innerHTML = `sono lunghe uguali`
-};
+}; */
 
 /* / snack2 */
 
 /* snack 3  */
 
-let arrNum = [];
+/* let arrNum = [];
 let somma = 0;
 
 for (let i = 0; i < 10; i++) {
@@ -43,13 +43,13 @@ for (let i=0; i < arrNum.length; i++) {
      
 };
 
-document.getElementById('maggiore').innerHTML = somma;
+document.getElementById('maggiore').innerHTML = somma; */
 
 /* / snack 3 */
 
 /* snack 4 */
 
-const invitati = [
+/* const invitati = [
     'Pietro Pacciani',
     'Annamaria Franzoni',
     'Amanda Knox',
@@ -72,12 +72,12 @@ if (permessoAccordato) {
 } else {
     document.getElementById('maggiore').innerHTML = "tu non puoi passare!"
 };
- 
+  */
 /* / snack 4 */
 
 /* snack 5 */
 
-let arrNum = [];
+/* let arrNum = [];
 
 for (let i = 0; i < 6; i++) {
     let userNum = parseInt(prompt('numero'));
@@ -86,12 +86,12 @@ for (let i = 0; i < 6; i++) {
         arrNum.push(userNum)
     } 
     document.getElementById('maggiore').innerHTML = arrNum;
-};
+}; */
 
 /* / snack 5 */
 
 /* snack 6 */
-
+/* 
 const arrNum = [];
 
 for (let i = 0; i < 4; i++) {
@@ -107,8 +107,29 @@ const sumWithInitial = arrNum.reduce(
 );
 
 document.getElementById('maggiore').innerHTML = sumWithInitial;
-
+ */
 /* / snack 6 */
+
+/* snack 9 */
+/* 
+let arrNum = [];
+
+while (arrNum.length < 10) {
+    let userNum = parseInt(prompt('numero'));
+    arrNum.push(userNum)
+};
+console.log(arrNum); */
+
+let arrNum = [];
+let sum = 0;
+
+for ( let i = 1; i <= 10; i++) {
+    sum += i; 
+}
+
+let average = sum / 10 ;
+
+console.log (sum, average)
 
 
 

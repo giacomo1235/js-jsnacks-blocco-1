@@ -129,7 +129,7 @@ document.getElementById('maggiore').innerHTML = sum, average;
 
 
 /* snack 2.1 ciclo for */
-
+/* 
 let arrNum = [];
 let somma = 0;
 
@@ -143,12 +143,12 @@ for (let i=0; i < arrNum.length; i++) {
      
 };
 
-document.getElementById('maggiore').innerHTML = somma; 
+document.getElementById('maggiore').innerHTML = somma;  */
 
 /* / snack 2.1 ciclo for */
 
 /* snack 2.1 ciclo while1 */
-
+/* 
 let arrNum = [];
 let somma = 0;
 let i=0;
@@ -158,6 +158,35 @@ while (arrNum.length < 5) {
     somma += arrNum[i];
 };
 
-document.getElementById('maggiore').innerHTML = somma;
+document.getElementById('maggiore').innerHTML = somma; */
 
 /* / snack 2.1 ciclo while */
+
+/* snack 2.2 */
+/* 
+let userNum = parseInt(prompt('numero'));
+
+while (userNum % 2 == 1) {
+
+    userNum += 1;
+
+};
+
+document.getElementById('maggiore').innerHTML = userNum; */
+
+/* / snack 2.2 */
+
+const arrNomi = ['Amanda', 'Pietro', 'Anna Maria']
+const arrCognomi = ['Knox', 'Pacciani', 'Franzoni']
+
+for (let i = 0; i < 3; i++) {
+    const indexRandomNome = Math.floor(Math.random() * arrNomi.length);
+    const nome = arrNomi[indexRandomNome];
+
+    const indexRandomCognome = Math.floor(Math.random() * arrNomi.length);
+    const cognome = arrCognomi[indexRandomCognome];
+
+    const nomeFinale = nome + ' ' + cognome
+    
+    document.getElementById('maggiore').innerHTML = nomeFinale + nomeFinale + nomeFinale;
+}

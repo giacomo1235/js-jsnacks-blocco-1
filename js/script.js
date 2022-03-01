@@ -188,5 +188,5 @@ for (let i = 0; i < 3; i++) {
 
     const nomeFinale = nome + ' ' + cognome
     
-    document.getElementById('maggiore').innerHTML = nomeFinale + nomeFinale + nomeFinale;
+    console.log(nomeFinale)
 }
